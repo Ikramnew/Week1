@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <ul>
+                <li><img src="https://dumbways.id/assets/images/brandred.png" alt="logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">My Project</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button>
+                <a href="contact.html">Contact Me</a>
+            </button>
+        </div>
+    </nav>
+    <form class="form" id="myForm" onsubmit="sendEmail(event)">
+        <h3>Contact Me</h3>
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" >
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" >
+        </div>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="number" >
+        </div>
+        <div>
+            <label for="subject">Subject</label>
+            <select id="subject" >
+                <option hidden value="">Select Option</option>
+                <option value="inquiry">Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">Your Message</label>
+            <textarea id="message" ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="assets/script.js"></script>
+</body>
+</html>

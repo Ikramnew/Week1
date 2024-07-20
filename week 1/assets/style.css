@@ -1,0 +1,338 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color:  #e2e6e9;
+}
+
+nav{
+    background-color: #f4f3f3;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.left ul{
+     display: flex;
+     align-items: center;   
+}
+.left img{
+    width: 40px;
+    padding-right: 30px;
+    
+}
+
+.left ul li{
+    padding-right: 15px;
+    list-style-type: none;
+    color: rgb(158, 158, 158);
+
+    
+}
+
+.left ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+.right{
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.right a{
+    
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgb(124, 118, 118);
+}
+.right a:hover{
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: orangered ;
+    padding: 6px;
+    border-radius: 10px;
+}
+button{
+    border: none;
+}
+
+
+/*  */
+.card{
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+    background-color: white;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(41, 37, 37, 0.2), 0 6px 30px 0 rgba(95, 7, 7, 0.19);
+    display: flex;
+    padding: 40px;
+    align-items: center;
+}
+
+.content{
+    width: 400px;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+
+.photo-profile img{
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.photo-profile{
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 10px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+
+.social-icons a {
+    color: black;
+}
+.social-icons{
+    
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+/* Mengatur gaya umum untuk formulir */
+.form{
+    width: 300px;
+    margin: auto;
+}
+
+
+.form input, select, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(41, 37, 37, 0.2), 0 6px 30px 0 rgba(243, 243, 243, 0.19);
+    border: none;
+    
+}
+
+.form textarea {
+    resize: vertical;
+  }
+  
+  .form div {
+    margin-bottom: 15px;
+  }
+  
+  .form label {
+    font-weight: 500;
+  }
+  
+  .form button {
+    background-color: orangered;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+  }
+  
+  .form button:hover {
+    background-color: rgb(255, 166, 0);
+    transition: 0.5s;
+  }
+
+  /* project */
+
+  .form-project {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    
+}
+.form-project div {
+    margin-bottom: 15px;
+}
+.form-project label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-project input[type="text"],
+.form-project input[type="date"],
+.form-project textarea,
+.form-project input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    box-shadow: 0 4px 8px 0 rgba(41, 37, 37, 0.2), 0 6px 30px 0 rgba(243, 243, 243, 0.19);
+
+}
+.form-project .date {
+    display: flex;
+    justify-content: space-between;
+}
+.form-project .date span {
+    flex: 1;
+    margin-right: 10px;
+}
+.form-project .date span:last-child {
+    margin-right: 0;
+}
+.checkbox-row {
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox-row div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.checkbox-row label {
+    margin-left: 5px;
+}
+.form-project button {
+    background-color: orangered;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+}
+
+
+.my-project {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+
+    
+    
+
+}
+
+.my-project h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.my-project .card{
+    display: flex;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.project-card {
+    
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    margin-bottom: 20px;
+    width: 300px;
+    margin-right: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+}
+
+.project-image {
+    width: 100%;
+    
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.project-info h3 {
+    margin-top: 0;
+}
+
+.project-description {
+    color: #555;
+}
+
+.project-actions {
+    margin-top: 15px;
+}
+
+.edit-button, .delete-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+    width: 45%;
+    
+
+}
+.delete-button{
+    float: right;
+}
+
+
+.edit-button:hover, .delete-button:hover {
+    opacity: 0.5;
+}
+
+
+.main-detail h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.detail {
+    display: flex;
+    padding: 50px;
+    width: 800px;
+    
+    
+
+    
+    
+    
+}
+.detail img{
+
+    height: 30%;
+    margin-right: 20px;
+}
+
+.detail-description{
+    padding: 50px;
+    text-align: justify;
+}
+
+.tech i{
+    padding: 10px;
+}

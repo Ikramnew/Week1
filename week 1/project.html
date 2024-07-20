@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <ul>
+                <li><img src="https://dumbways.id/assets/images/brandred.png" alt="logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html"><strong>My Project</strong></a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button>
+                <a href="contact.html">Contact Me</a>
+            </button>
+        </div>
+    </nav>
+    <main>
+      <div>
+        <form class="form-project" id="form-project" onsubmit="addProject(event)">
+            <h3 style="text-align: center;">Add My Project</h3>
+            <div>
+                <label for="projectName">Project Name</label>
+                <input type="text" id="projectName">
+            </div>
+            <div class="date">
+                <span>
+                    <label for="startDate">Start Date</label>
+                    <input type="date" id="startDate">
+                </span>
+                <span>
+                    <label for="endDate">End Date</label>
+                    <input type="date" id="endDate">
+                </span>
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <textarea id="description"></textarea>
+            </div>
+            <label>Teknologi</label>
+            <div class="checkbox-row">
+                <div>
+                    <input type="checkbox" id="html" name="technology" value="HTML">
+                    <label for="html">HTML</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="css" name="technology" value="CSS">
+                    <label for="css">CSS</label>
+                </div>
+            </div>
+            <div class="checkbox-row">
+                <div>
+                    <input type="checkbox" id="javascript" name="technology" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="python" name="technology" value="Python">
+                    <label for="python">Python</label>
+                </div>
+            </div>
+            <div>
+                <label for="file">Upload Gambar</label>
+                <input type="file" id="file">
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+      </div>
+      <!-- akhir form -->
+      <section class="my-project">
+        <h2>My Project</h2>
+        <div class="card" id="projectCards"></div>
+      </section>
+    </main>
+    <script src="assets/project.js"></script>
+</body>
+</html>
